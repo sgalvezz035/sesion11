@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sofía Gálvez | Blog Creativo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffeaf3;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #ffb6d9;
+      padding: 40px 20px;
+      text-align: center;
+      color: #ffffff;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 50px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-shadow: 3px 3px #00000040;
+      animation: fadeInDown 1s ease;
+    }
+    section {
+      padding: 70px 30px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .section-title {
+      text-align: center;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #d63384;
+      text-transform: uppercase;
+    }
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto 60px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    .card h3 {
+      font-family: 'Quicksand', sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #ff69b4;
+      text-align: center;
+    }
+    .card p, .card ul {
+      font-size: 15px;
+      line-height: 1.7;
+      text-align: center;
+    }
+    .card ul {
+      list-style: disc;
+      padding-left: 20px;
+      text-align: left;
+    }
+    .card img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+    .back-button {
+      display: block;
+      text-align: center;
+      margin: 50px auto;
+      padding: 12px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(to right, #ff69b4, #ffb6d9);
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      width: max-content;
+    }
+    .back-button:hover {
+      background: linear-gradient(to right, #ff85c1, #ffa3cf);
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>Sofía Gálvez Zuñiga 💖</header>
+  <section>
+    <h2 class="section-title">Sobre Mí</h2>
+    <div class="content-grid">
+      <div class="card">
+        <img src="RECURSOS/diseño.png" />
+        <h3>👩‍🎨 ¿Quién soy?</h3>
+        <p>Estudiante creativa de Diseño Gràfico. Amante del arte, la estética y la emoción en cada detalle.</p>
+      </div>
+      <div class="card">
+        <img src="RECURSOS/pelicula.jpg" />
+        <h3>🎨 Pasatiempos</h3>
+        <ul>
+          <li>Ilustraciones digitales</li>
+          <li>Ver peliculas y series</li>
+          <li>Escuchar mùsica y cantar</li>
+        </ul>
+      </div>
+      <div class="card">
+        <img src="RECURSOS/amistad.jpg" />
+        <h3>💗 Mis Valores</h3>
+        <p>Creatividad, sensibilidad, amistad y pasión por lo visual.</p>
+      </div>
+      <div class="card">
+        <img src="RECURSOS/viajar.jpg" />
+        <h3>🌈 Sueños</h3>
+        <p>Ser directora de arte, viajar y tener mucho dinero.</p>
+      </div>
+      <div class="card">
+        <img src="RECURSOS/MUSICA.png" />
+        <h3>📷 Inspiraciones</h3>
+        <p>El arte, los cafés bonitos, la música y los colores pastel.</p>
+      </div>
+      <div class="card">
+        <img src="RECURSOS/paseo.jpg" />
+        <h3>☕ Un día ideal</h3>
+        <p>Una mañana con mi familia, paseos, fotos de la ciudad y noche de pelicula.</p>
+      </div>
+    </div>
+    <a href="index.html" class="back-button">← Volver al Inicio</a>
+  </section>
+</body>
+</html>
